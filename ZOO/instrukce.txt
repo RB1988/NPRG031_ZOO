@@ -1,0 +1,35 @@
+﻿Instrukce byly řečeny na cvičení. Toto je jen jejich hrubý soupis:
+
+Lvi jsou zvířata.
+Antilopy jsou zvířata.
+Červy jsou zvířata.
+Každé zvíře náleží k nějakému druhu. (Např. Lev, Antilopa nebo červ.) Druh
+jednoznačně odpovídá třídě v c#. Třídy Lev, Antilopa a Červ jsou odvozeny od
+třídy Zvíře.
+Vytvořte třídu zvíře, ale znemožněte vytváření zvířat bez specifikovaného druhu.
+Každé zvíře má své jméno a hmotnost. Znemožněte vytváření zvířat bez udaného 
+jména a hmotnosti.
+Implementujte metodu Zvire.ToString(), tak aby vracela popis zvířete dle ukázky.
+Formát výpisu je stejný pro všechna zvířata. Proto se pokuste neoverridovat 
+metodu ToString v potomcích a to i přestože součástí výpisu je i jméno druhu
+zvířete. (Řešení trikem: abstraktní protected metoda vracející druh jako string.
+Zajistěte, aby se nové třídy zvířete nepřeložili, v případě, že tento string
+nebude vyplněn.)
+Zvířata mají metodu RozmnozSe, která vrací nové zvíře stejného druhu. Tuto
+metodu sice bude nutné implementovat do všech zvířat zvlášť. Zajistěte, aby
+v případě, že metoda nebude doplněná pro konkrétní druh ručně, aby program při
+volání dané metody vyvolával NotImplementedException
+Zvířata jedí jídlo. K tomu slouží metoda Snez, která si bere jako argument
+jídlo. Každé zvíře je zároveň jídlem. Na rozdíl od jiných jídel je každé zvíře
+je buď živé nebo mrtvé.
+Pokud je zvíře snězeno zemře. Výjimkou je červ ten po snězení nezemře.
+Při úmrtí zvířete je volána metoda Umri, která je veřejná a lze její pomocí
+zvíře usmrtit. Během volání této metody program vypíše úmrtní oznámení dle 
+ukázky. Výjimečné chování mají antilopy, které při svém úmrtí v případě, že jsou
+snězeny, navíc napíší zprávu o tom, že se snažili utéct, tak jako v ukázce.
+
+Dobrovolně k zamyšlení: Bíložravci jedí jedině rostliny. Masožravci jedině maso.
+Všežravci jedí maso i rostliny.
+Dobrovolně k zamyšlení 2: Kvůli metodě RozmnozSe sice musí být u každého druhu
+(třídy) zvířete speciální podpora. Co kdybychom chtěli metodu rozmnožse přetížit
+tak aby se mohlo specifikovat jméno nového jedince.

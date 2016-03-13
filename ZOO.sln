@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZOO", "ZOO\ZOO.csproj", "{0519AC33-87E5-4F89-B6C3-064CF05EC4E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KontrolniTesty", "KontrolniTesty\KontrolniTesty.csproj", "{3AC4E071-563C-4CA5-AB2A-FB54B0E56177}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0519AC33-87E5-4F89-B6C3-064CF05EC4E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0519AC33-87E5-4F89-B6C3-064CF05EC4E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0519AC33-87E5-4F89-B6C3-064CF05EC4E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0519AC33-87E5-4F89-B6C3-064CF05EC4E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AC4E071-563C-4CA5-AB2A-FB54B0E56177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC4E071-563C-4CA5-AB2A-FB54B0E56177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC4E071-563C-4CA5-AB2A-FB54B0E56177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC4E071-563C-4CA5-AB2A-FB54B0E56177}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
