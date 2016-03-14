@@ -185,12 +185,12 @@ namespace KontrolniTesty
 				new Type[] { typeof(string), typeof(int) }
 			);
 			int delka = constructor.GetMethodBody().GetILAsByteArray().Length;
-			Assert.IsTrue(delka == 12, message);
+			Assert.IsTrue(delka <= 12, message);
 			constructor = cAntilopa.GetConstructor(
 				new Type[] { typeof(string), typeof(int) }
 			);
 			delka = constructor.GetMethodBody().GetILAsByteArray().Length;
-			Assert.IsTrue(delka == 12, message);
+			Assert.IsTrue(delka <= 12, message);
 		}
 		private void zkontrolujKonzoli(Action a, string expectedOutput)
 		{
