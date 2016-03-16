@@ -234,8 +234,8 @@ namespace KontrolniTesty
 				"Pokud je snezeno jidlo, tak musi umrit."
 			);
 			zkontrolujKonzoli(
-				() => { mSnez.Invoke(alik, new object[] { alik }); },
-				"Umrtni oznameni: lev(Jmeno=\"Alik\",Hmotnost=8)"
+				() => { mSnez.Invoke(vytvorAlika(), new object[] { alik }); },
+				"Umrtni oznameni: lev(Jmeno=\"Alik\",Hmotnost=4)"
 				 + Environment.NewLine
 			);
 		}
